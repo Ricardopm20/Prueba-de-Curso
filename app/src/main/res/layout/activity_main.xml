@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/Lv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"
+     />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/Lh1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7"
+        />
+
+    <TextView
+        android:id="@+id/l1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="NOMBRE DEL PERRO"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:textColor="@color/white"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/Lv1"
+        />
+
+    <TextView
+        android:id="@+id/l2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="RAZA DEL PERRO"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/l1" />
+
+    <EditText
+        android:id="@+id/txtRaza"
+        android:textColor="@color/white"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/Lv1"
+        app:layout_constraintTop_toBottomOf="@id/txtNombre"
+        />
+
+    <TextView
+        android:id="@+id/L3"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="EDAD DEL PERRO"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/l2" />
+
+    <EditText
+        android:id="@id/txtEdad"
+        android:textColor="@color/white"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/Lv1"
+        app:layout_constraintTop_toBottomOf="@id/txtRaza"
+        />
+
+    <TextView
+        android:id="@+id/L4"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="SEXO DEL PERRO "
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/L3"
+        />
+
+    <EditText
+        android:id="@+id/txtSexo"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/Lv1"
+        app:layout_constraintTop_toBottomOf="@id/txtEdad"
+        />
+
+
+    <Button
+        android:id="@+id/IdBotton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="prueba"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/Lh1"
+     />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
